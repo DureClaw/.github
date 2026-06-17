@@ -11,11 +11,22 @@ _Turn scattered devices into one collaborating AI crew — distributed brains, h
 
 ---
 
-여러 머신(엣지 Pi · GPU · Windows · Mac)을 **하나의 실시간 채널로 묶어** 협동하는 AI 에이전트 인프라를 만듭니다.
-LLM 호출은 마스터가 흡수해 엣지는 **키·비용 0**, 승인된 판단은 **결정론적 룰로 컴파일**해 재사용합니다.
+DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **에이전트(Claw)가 스스로 네트워크와 동작을 정의**하도록 돕습니다.
+새 시스템으로 갈아엎지 않고, **현 인프라에서 데이터 수집·분석을 시작**해 **자동화와 AX(AI Transformation)로 가는 첫 걸음**이 됩니다.
 
-> We build infrastructure that joins many machines (edge Pi · GPU · Windows · Mac) on **one real-time channel** to collaborate as an AI crew.
-> The master absorbs LLM calls (so edges stay **keyless, zero-cost**), and approved judgments are **compiled into deterministic rules** for reuse.
+> DureClaw sits **on top of infrastructure that already works**, letting the **agent (Claw) define its own network and behavior**.
+> Without replacing anything, it's the **starting point** to begin **data collection & analysis on your existing infrastructure** — and the on-ramp to **automation and AX**.
+
+여러 머신(엣지 Pi · GPU · Windows · Mac)을 **하나의 실시간 채널로 묶고**, LLM 호출은 마스터가 흡수해 엣지는 **키·비용 0**,
+승인된 판단은 **결정론적 룰로 컴파일**해 재사용합니다. _Many machines on one channel · keyless edges · approved decisions compiled into rules._
+
+### 시작점 → AX 여정 / From here to AX
+
+```
+[기존 인프라]  ──▶  ① 데이터 수집  ──▶  ② 분석(LLM)  ──▶  ③ 자동화(룰 컴파일)  ──▶  ④ AX
+ 갈아엎지 않음        collect            analyze           automate                AI transformation
+   (Claw 가 네트워크·동작을 스스로 정의 — self-defining network & behavior)
+```
 
 ---
 
