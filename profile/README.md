@@ -42,7 +42,7 @@ DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **
 
 | Repo | 무엇 / What | |
 |------|------------|---|
-| **[edgeclaw](https://github.com/DureClaw/edgeclaw)** | **OS 노드** — 단일 정적 Go 바이너리. Win·Mac·Linux·**Pi Zero(armv6)**·riscv64… 어디서나. 로컬 핸드(shell/sensor) + LLM은 마스터에 keyless 위임. **사전빌드 릴리즈 + 설치 원라이너.** | `go` `cross-platform` |
+| **[edgeclaw](https://github.com/DureClaw/edgeclaw)** | **OS 노드** — 단일 정적 Go 바이너리. Win·Mac·Linux·**Pi Zero(armv6)**·riscv64… 어디서나. 로컬 핸드(shell/sensor) + LLM은 마스터에 keyless 위임. **physical-edge 모드**로 Pi의 LED·부저·음성까지 구동 — *승인 = 물리적 결과*(GPIO는 pure-Go gpiochip, WAV 내장). **사전빌드 릴리즈 + 설치 원라이너.** | `go` `cross-platform` `gpio` |
 | **[webclaw](https://github.com/DureClaw/webclaw)** | **브라우저 노드** — Chrome MV3 확장. 브라우저를 fleet에 빌려준다(fetch·DOM, CORS-free, 상시). 순수 JS, 빌드 0. *assistant 아니라 node.* | `chrome-extension` `browser` |
 
 **Adapters — 기존 도구를 fleet에 붙이는 브리지 (`dureclaw/` 동봉)**
