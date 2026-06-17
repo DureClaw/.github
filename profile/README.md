@@ -32,10 +32,32 @@ DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **
 
 ## 프로젝트 / Projects
 
+**Core — the bus**
+
 | Repo | 무엇 / What | |
 |------|------------|---|
 | **[dureclaw](https://github.com/DureClaw/dureclaw)** | 분산 에이전트 협력 버스 (Phoenix Channel) — 멀티머신 에이전트 팀을 WebSocket 한 채널로 오케스트레이션. Claude Code 플러그인. | `multi-agent` `orchestration` |
+
+**Native nodes — built bus-first (한 줄로 fleet 합류, keyless)**
+
+| Repo | 무엇 / What | |
+|------|------------|---|
+| **[edgeclaw](https://github.com/DureClaw/edgeclaw)** | **OS 노드** — 단일 정적 Go 바이너리. Win·Mac·Linux·**Pi Zero(armv6)**·riscv64… 어디서나. 로컬 핸드(shell/sensor) + LLM은 마스터에 keyless 위임. **사전빌드 릴리즈 + 설치 원라이너.** | `go` `cross-platform` |
+| **[webclaw](https://github.com/DureClaw/webclaw)** | **브라우저 노드** — Chrome MV3 확장. 브라우저를 fleet에 빌려준다(fetch·DOM, CORS-free, 상시). 순수 JS, 빌드 0. *assistant 아니라 node.* | `chrome-extension` `browser` |
+
+**Adapters — 기존 도구를 fleet에 붙이는 브리지 (`dureclaw/` 동봉)**
+
+| Repo | 원본 / Upstream | |
+|------|------------|---|
+| **[picoclaw](https://github.com/DureClaw/picoclaw)** · **[nanobot](https://github.com/DureClaw/nanobot)** · **[zeroclaw](https://github.com/DureClaw/zeroclaw)** · **[nullclaw](https://github.com/DureClaw/nullclaw)** | sipeed/picoclaw(Go) · HKUDS/nanobot(Py) · zeroclaw-labs(Rust) · nullclaw(Zig) — 각 repo에 `dureclaw/` 브리지를 더해 fleet에 합류 | `adapter` `bridge` |
+
+**Demo**
+
+| Repo | 무엇 / What | |
+|------|------------|---|
 | **[dure-factory-public](https://github.com/DureClaw/dure-factory-public)** | 분산 엣지 × 제조 MES 데모 — 흩어진 공장 장비를 한 버스로 묶어 *센싱 → 종합 → 승인 → 결정 동결*. DureClaw + [Open MES Korea](https://github.com/baryonlabs/open-mes-korea). | `edge` `manufacturing` |
+
+> **edge**claw(OS) · **web**claw(브라우저) = *네이티브 노드* | pico·nano·zero·null = *기존 도구 어댑터*. 둘 다 같은 버스, 같은 keyless 위임.
 
 ---
 
