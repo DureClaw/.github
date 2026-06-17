@@ -57,7 +57,7 @@ DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **
 | Repo | 무엇 / What | |
 |------|------------|---|
 | **[dure-factory-public](https://github.com/DureClaw/dure-factory-public)** | 분산 엣지 × 제조 MES 데모 — 흩어진 공장 장비를 한 버스로 묶어 *센싱 → 종합 → 승인 → 결정 동결*. _Distributed edge × manufacturing MES demo: sense → synthesize → approve → freeze._ DureClaw + [Open MES Korea](https://github.com/baryonlabs/open-mes-korea). | `edge` `manufacturing` |
-| **[whitepaper](https://github.com/DureClaw/whitepaper)** | 📄 **기술 백서 / Technical Whitepaper** — 아키텍처·원칙·보안·사례 한 문서로. 한·영 혼용 [PDF](https://github.com/DureClaw/whitepaper/raw/main/DureClaw-Whitepaper-v1.0.pdf). | `docs` `whitepaper` |
+| **[whitepaper](https://github.com/DureClaw/whitepaper)** | 📄 **기술 백서 / Technical Whitepaper** — 아키텍처·원칙·보안·사례 한 문서로. [한국어판 PDF](https://github.com/DureClaw/whitepaper/raw/main/DureClaw-Whitepaper-v1.0-KO.pdf) · [English PDF](https://github.com/DureClaw/whitepaper/raw/main/DureClaw-Whitepaper-v1.0-EN.pdf). | `docs` `whitepaper` |
 
 > **edge**claw(OS·물리) · **web**claw(브라우저) · **desk**claw(데스크톱 GUI) = *네이티브 노드* | pico·nano·zero·null = *기존 도구 어댑터*. 모두 같은 버스, 같은 keyless 위임 — 마스터가 두뇌, 각 claw는 서로 다른 손.
 
