@@ -52,11 +52,12 @@ DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **
 |------|------------|---|
 | **[picoclaw](https://github.com/DureClaw/picoclaw)** · **[nanobot](https://github.com/DureClaw/nanobot)** · **[zeroclaw](https://github.com/DureClaw/zeroclaw)** · **[nullclaw](https://github.com/DureClaw/nullclaw)** | sipeed/picoclaw(Go) · HKUDS/nanobot(Py) · zeroclaw-labs(Rust) · nullclaw(Zig) — 각 repo에 `dureclaw/` 브리지를 더해 fleet에 합류 | `adapter` `bridge` |
 
-**Demo**
+**Demo & Docs**
 
 | Repo | 무엇 / What | |
 |------|------------|---|
 | **[dure-factory-public](https://github.com/DureClaw/dure-factory-public)** | 분산 엣지 × 제조 MES 데모 — 흩어진 공장 장비를 한 버스로 묶어 *센싱 → 종합 → 승인 → 결정 동결*. _Distributed edge × manufacturing MES demo: sense → synthesize → approve → freeze._ DureClaw + [Open MES Korea](https://github.com/baryonlabs/open-mes-korea). | `edge` `manufacturing` |
+| **[whitepaper](https://github.com/DureClaw/whitepaper)** | 📄 **기술 백서 / Technical Whitepaper** — 아키텍처·원칙·보안·사례 한 문서로. 한·영 혼용 [PDF](https://github.com/DureClaw/whitepaper/raw/main/DureClaw-Whitepaper-v1.0.pdf). | `docs` `whitepaper` |
 
 > **edge**claw(OS·물리) · **web**claw(브라우저) · **desk**claw(데스크톱 GUI) = *네이티브 노드* | pico·nano·zero·null = *기존 도구 어댑터*. 모두 같은 버스, 같은 keyless 위임 — 마스터가 두뇌, 각 claw는 서로 다른 손.
 
