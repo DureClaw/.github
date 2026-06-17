@@ -36,7 +36,7 @@ DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **
 
 | Repo | 무엇 / What | |
 |------|------------|---|
-| **[dureclaw](https://github.com/DureClaw/dureclaw)** | 분산 에이전트 협력 버스 (Phoenix Channel) — 멀티머신 에이전트 팀을 WebSocket 한 채널로 오케스트레이션. Claude Code 플러그인. | `multi-agent` `orchestration` |
+| **[dureclaw](https://github.com/DureClaw/dureclaw)** | 분산 에이전트 협력 버스 (Phoenix Channel) — 멀티머신 에이전트 팀을 WebSocket 한 채널로 오케스트레이션. Claude Code 플러그인. _The collaboration bus — orchestrate a multi-machine agent team over one WebSocket channel._ | `multi-agent` `orchestration` |
 
 **Native nodes — built bus-first (한 줄로 fleet 합류, keyless)**
 
@@ -56,7 +56,7 @@ DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **
 
 | Repo | 무엇 / What | |
 |------|------------|---|
-| **[dure-factory-public](https://github.com/DureClaw/dure-factory-public)** | 분산 엣지 × 제조 MES 데모 — 흩어진 공장 장비를 한 버스로 묶어 *센싱 → 종합 → 승인 → 결정 동결*. DureClaw + [Open MES Korea](https://github.com/baryonlabs/open-mes-korea). | `edge` `manufacturing` |
+| **[dure-factory-public](https://github.com/DureClaw/dure-factory-public)** | 분산 엣지 × 제조 MES 데모 — 흩어진 공장 장비를 한 버스로 묶어 *센싱 → 종합 → 승인 → 결정 동결*. _Distributed edge × manufacturing MES demo: sense → synthesize → approve → freeze._ DureClaw + [Open MES Korea](https://github.com/baryonlabs/open-mes-korea). | `edge` `manufacturing` |
 
 > **edge**claw(OS·물리) · **web**claw(브라우저) · **desk**claw(데스크톱 GUI) = *네이티브 노드* | pico·nano·zero·null = *기존 도구 어댑터*. 모두 같은 버스, 같은 keyless 위임 — 마스터가 두뇌, 각 claw는 서로 다른 손.
 
@@ -92,11 +92,11 @@ skill-cache rules on the line, RPA macros on the desktop._
         └────────── 닫힌 학습 루프: 승인된 결정을 룰로 컴파일 → µs 재사용 (LLM 0회) ──────────┘
 ```
 
-1. **센싱** — 흩어진 노드가 키 없이 한 줄로 버스에 합류, 자기 역할을 관측
-2. **종합** — 마스터(Claude)가 fan-in 수집해 추론·**제안** (직접 실행 0)
-3. **승인** — 사람이 검토·사인
-4. **결정 동결 (LLM as compiler)** — 승인된 판단을 결정론적 룰로 → 같은 문제는 **LLM 0회**로 µs 재사용
-   _(제조 라인 = 스킬 캐시 룰 · 데스크톱 = deskclaw RPA 매크로 — 같은 닫힌 루프의 두 모습)_
+1. **센싱 / Sense** — 흩어진 노드가 키 없이 한 줄로 버스에 합류 (keyless, one-line join), 자기 역할을 관측
+2. **종합 / Synthesize** — 마스터(Claude)가 fan-in 수집해 추론·**제안**, 직접 실행은 0 (proposes, never acts)
+3. **승인 / Approve** — 사람이 검토·사인 (a human reviews & signs)
+4. **결정 동결 / Freeze (LLM as compiler)** — 승인된 판단을 결정론적 룰로 컴파일 → 같은 문제는 **LLM 0회**로 µs 재사용 (compile the decision; replay with zero LLM)
+   _제조 라인 = 스킬 캐시 룰 · 데스크톱 = deskclaw RPA 매크로 — 같은 닫힌 루프의 두 모습 (skill-cache on the line, RPA macros on the desktop)_
 
 ---
 
