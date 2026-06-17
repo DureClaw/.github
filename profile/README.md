@@ -62,6 +62,27 @@ DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **
 
 ---
 
+## 한 두뇌, 여러 손 / One brain, many hands
+
+마스터(Claude)가 **두뇌**, 각 claw는 **서로 다른 손**입니다. 같은 버스·같은 keyless 위임으로,
+하나의 추론이 **물리 세계·브라우저·데스크톱** 어디로든 손을 뻗습니다.
+
+```
+                        ┌─ edgeclaw ─ 물리 세계의 손  (shell·sensor·GPIO·LED·부저·릴레이·신호탑)
+  마스터 두뇌 ──fan-out──┼─ webclaw  ─ 브라우저의 손    (fetch·DOM, CORS-free)
+  (Claude · 비전·추론)   ├─ deskclaw ─ 데스크톱 GUI의 손 (스크린샷·클릭·타이핑·앱실행)
+                        └─ adapters ─ 기존 도구의 손   (pico·nano·zero·null)
+```
+
+> _One brain (Claude), many hands. The same reasoning reaches into the physical world, the
+> browser, or the desktop — one bus, one keyless delegation._
+
+그리고 **한 번 가르친 동작은 결정으로 동결**됩니다 — 제조는 **스킬 캐시(룰)**, 데스크톱은
+**RPA 매크로**로. 다음부터는 같은 일을 **LLM 0회**로 재생합니다. _Teach once, then replay with no LLM —
+skill-cache rules on the line, RPA macros on the desktop._
+
+---
+
 ## 어떻게 동작하나 / How it works
 
 ```
@@ -75,6 +96,7 @@ DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **
 2. **종합** — 마스터(Claude)가 fan-in 수집해 추론·**제안** (직접 실행 0)
 3. **승인** — 사람이 검토·사인
 4. **결정 동결 (LLM as compiler)** — 승인된 판단을 결정론적 룰로 → 같은 문제는 **LLM 0회**로 µs 재사용
+   _(제조 라인 = 스킬 캐시 룰 · 데스크톱 = deskclaw RPA 매크로 — 같은 닫힌 루프의 두 모습)_
 
 ---
 
