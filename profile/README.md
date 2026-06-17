@@ -44,6 +44,7 @@ DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **
 |------|------------|---|
 | **[edgeclaw](https://github.com/DureClaw/edgeclaw)** | **OS 노드** — 단일 정적 Go 바이너리. Win·Mac·Linux·**Pi Zero(armv6)**·riscv64… 어디서나. 로컬 핸드(shell/sensor) + LLM은 마스터에 keyless 위임. **physical-edge 모드**로 엣지 박스(Pi·Jetson·BeagleBone·산업용 게이트웨이/IPC 등 gpiochip 노출 Linux)의 LED·부저·릴레이·신호탑(패트라이트)·안돈·PA 음성까지 구동 — *승인 = 물리적 결과*(GPIO는 pure-Go gpiochip, WAV 내장). **사전빌드 릴리즈 + 설치 원라이너.** | `go` `cross-platform` `gpio` |
 | **[webclaw](https://github.com/DureClaw/webclaw)** | **브라우저 노드** — Chrome MV3 확장. 브라우저를 fleet에 빌려준다(fetch·DOM, CORS-free, 상시). 순수 JS, 빌드 0. *assistant 아니라 node.* | `chrome-extension` `browser` |
+| **[deskclaw](https://github.com/DureClaw/deskclaw)** | **데스크톱 GUI 노드** — Win/macOS 데스크톱을 fleet에 빌려준다: 눈(스크린샷)+손(클릭·타이핑·키·앱실행). 마스터가 두뇌(computer-use 비전). **RPA record→replay** — LLM이 한 번 가르치면 매크로로 동결해 *LLM 없이* 결정론적 재생. 순수 Go/No-CGo(OS 내장 도구). | `go` `desktop` `gui` `rpa` |
 
 **Adapters — 기존 도구를 fleet에 붙이는 브리지 (`dureclaw/` 동봉)**
 
@@ -57,7 +58,7 @@ DureClaw는 **이미 잘 돌아가는 다플랫폼 인프라 위에** 얹혀, **
 |------|------------|---|
 | **[dure-factory-public](https://github.com/DureClaw/dure-factory-public)** | 분산 엣지 × 제조 MES 데모 — 흩어진 공장 장비를 한 버스로 묶어 *센싱 → 종합 → 승인 → 결정 동결*. DureClaw + [Open MES Korea](https://github.com/baryonlabs/open-mes-korea). | `edge` `manufacturing` |
 
-> **edge**claw(OS) · **web**claw(브라우저) = *네이티브 노드* | pico·nano·zero·null = *기존 도구 어댑터*. 둘 다 같은 버스, 같은 keyless 위임.
+> **edge**claw(OS·물리) · **web**claw(브라우저) · **desk**claw(데스크톱 GUI) = *네이티브 노드* | pico·nano·zero·null = *기존 도구 어댑터*. 모두 같은 버스, 같은 keyless 위임 — 마스터가 두뇌, 각 claw는 서로 다른 손.
 
 ---
 
